@@ -157,6 +157,15 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
+
+        param: param {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "PARAM";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -170,7 +179,7 @@
 &kp LALT              &kp LEFT_WIN  &caps_word  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 TAB            &kp BACKSPACE       &lt 2 ENTER                             &mo 6
             >;
 
-            sensor-bindings = <&encoder_msc_vertical>;
+            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         FUNCTION {
@@ -180,6 +189,8 @@
 &kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans   &trans  &trans      &kp F12  &trans          &trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &duplicate_browser_tab
 &trans           &trans       &trans         &trans   &trans  &trans      &kp DEL  &trans                                                                   &trans
             >;
+
+            sensor-bindings = <&encoder_msc_vertical>;
         };
 
         NUM {
@@ -189,6 +200,8 @@
 &kp BSLH  &kp LBRC  &kp RBRC      &kp UNDER     &kp EQUAL  &trans      &trans  &kp PLUS      &kp MINUS  &kp LBKT   &kp RBKT  &kp PIPE
 &trans    &trans    &trans        &trans        &trans     &trans      &trans  &trans                                        &trans
             >;
+
+            sensor-bindings = <&param SCRL_UP SCRL_DOWN>;
         };
 
         MOUSE {
@@ -198,6 +211,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
             >;
+
+            sensor-bindings = <&param MOVE_X(20) MOVE_X(-20)>;
         };
 
         SCROLL {
@@ -207,6 +222,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
+
+            sensor-bindings = <&param SCRL_UP SCRL_DOWN>;
         };
 
         SYSTEM {
@@ -216,6 +233,8 @@
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans              &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans                                                                                   &trans
             >;
+
+            sensor-bindings = <&param SCRL_LEFT SCRL_RIGHT>;
         };
 
         BOARD_CTRL {

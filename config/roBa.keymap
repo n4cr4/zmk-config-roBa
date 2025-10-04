@@ -7,7 +7,12 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    tapping-term-ms = <180>;
+};
+
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <180>;
 };
 
 &trackball {

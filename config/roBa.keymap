@@ -149,38 +149,11 @@
             bindings = <&kp LC(LS(DOT))>, <&copilot_read_page>;
         };
 
-        m_tab: m_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "M_TAB";
-            bindings = <&kp M>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
-        h_left_arrow: h_left_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "H_LEFT_ARROW";
-            bindings = <&kp H>, <&kp LEFT_ARROW>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
-        l_right_arrow: l_right_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "L_RIGHT_ARROW";
-            bindings = <&kp L>, <&kp RIGHT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
         encoder_msc_vertical: encoder_msc_vertical {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_VERTICAL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
     };
 
@@ -189,10 +162,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W         &kp E       &kp R           &kp T                                                      &kp Y          &kp U   &lt 4 I    &kp O           &kp P
-&mt LCTRL A           &kp S         &kp D       &kp F           &kp G             &kp PRINTSCREEN      &copilot_dance      &h_left_arrow  &kp J   &kp K      &l_right_arrow  &mt RCTRL SEMI
-&mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V           &kp B             &cp_dance            &teams_sleep_dance  &kp N          &m_tab  &kp COMMA  &kp DOT         &mt LEFT_SHIFT SLASH
-&kp LALT              &kp LEFT_WIN  &caps_word  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 TAB            &kp BACKSPACE       &lt 2 ENTER                                       &mo 6
+&kp Q                 &kp W         &kp E       &kp R           &kp T                                                      &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&mt LCTRL A           &kp S         &kp D       &kp F           &kp G             &kp PRINTSCREEN      &copilot_dance      &kp H        &kp J  &kp K      &kp L    &mt RCTRL SEMI
+&mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V           &kp B             &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&kp LALT              &kp LEFT_WIN  &caps_word  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 TAB            &kp BACKSPACE       &lt 2 ENTER                             &mo 6
             >;
 
             sensor-bindings = <&encoder_msc_vertical>;

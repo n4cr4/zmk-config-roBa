@@ -164,7 +164,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
-            tap-ms = <20>;
+            tap-ms = <100>;
         };
     };
 
@@ -190,7 +190,7 @@
 &trans           &trans       &trans         &trans   &trans  &trans      &kp DEL  &trans                                                                   &trans
             >;
 
-            sensor-bindings = <&encoder_msc_vertical>;
+            sensor-bindings = <&param SCRL_UP SCRL_DOWN>;
         };
 
         NUM {
@@ -200,8 +200,6 @@
 &kp BSLH  &kp LBRC  &kp RBRC      &kp UNDER     &kp EQUAL  &trans      &trans  &kp PLUS      &kp MINUS  &kp LBKT   &kp RBKT  &kp PIPE
 &trans    &trans    &trans        &trans        &trans     &trans      &trans  &trans                                        &trans
             >;
-
-            sensor-bindings = <&param SCRL_UP SCRL_DOWN>;
         };
 
         MOUSE {
@@ -211,8 +209,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
             >;
-
-            sensor-bindings = <&param MOVE_X(20) MOVE_X(-20)>;
         };
 
         SCROLL {
@@ -222,8 +218,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
-
-            sensor-bindings = <&param SCRL_UP SCRL_DOWN>;
         };
 
         SYSTEM {
@@ -233,8 +227,6 @@
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans              &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans                                                                                   &trans
             >;
-
-            sensor-bindings = <&param SCRL_LEFT SCRL_RIGHT>;
         };
 
         BOARD_CTRL {

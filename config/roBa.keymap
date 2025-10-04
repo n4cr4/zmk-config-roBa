@@ -126,7 +126,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LT_LANG_DANCE";
             #binding-cells = <0>;
-            bindings = <&lt 1 LANG2>, <&kp LANGUAGE_1>;
+            bindings = <&lt 1 LANG1>, <&kp LANG2>;
         };
 
         cp_dance: cp_dance {

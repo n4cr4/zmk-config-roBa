@@ -175,6 +175,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        encoder_msc_vertical: encoder_msc_vertical {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_VERTICAL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
+        };
     };
 
     keymap {
@@ -188,7 +195,7 @@
 &kp LALT              &kp LEFT_WIN  &caps_word  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 TAB            &kp BACKSPACE       &lt 2 ENTER                                       &mo 6
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_vertical>;
         };
 
         FUNCTION {

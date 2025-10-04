@@ -191,7 +191,7 @@
             bindings = <
 &kp Q                 &kp W         &kp E       &kp R           &kp T                                                      &kp Y          &kp U   &lt 4 I    &kp O           &kp P
 &mt LCTRL A           &kp S         &kp D       &kp F           &kp G             &kp PRINTSCREEN      &copilot_dance      &h_left_arrow  &kp J   &kp K      &l_right_arrow  &mt RCTRL SEMI
-&mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V           &kp B             &cp_dance            &teams_sleep_dance  &kp N          &m_tab  &kp COMMA  &kp DOT         &kp SLASH
+&mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V           &kp B             &cp_dance            &teams_sleep_dance  &kp N          &m_tab  &kp COMMA  &kp DOT         &mt LEFT_SHIFT SLASH
 &kp LALT              &kp LEFT_WIN  &caps_word  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 TAB            &kp BACKSPACE       &lt 2 ENTER                                       &mo 6
             >;
 

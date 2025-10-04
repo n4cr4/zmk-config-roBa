@@ -57,7 +57,7 @@
         };
 
         quit {
-            bindings = <&kp LC(F4)>;
+            bindings = <&kp LA(F4)>;
             key-positions = <0 9>;
         };
 

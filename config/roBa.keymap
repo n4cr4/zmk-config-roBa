@@ -154,6 +154,8 @@
             label = "ENCODER_MSC_VERTICAL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
         };
     };
 

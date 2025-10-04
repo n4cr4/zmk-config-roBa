@@ -80,9 +80,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(X)>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 180>,
                 <&kp U>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 180>,
                 <&kp S>;
 
             label = "PC_SLEEP";
@@ -91,7 +91,11 @@
         cp_path_open: cp_path_open {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C) &kp LG(R) &kp LC(V)>;
+            bindings =
+                <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C) &kp LG(R)>,
+                <&macro_wait_time 180>,
+                <&kp LC(V) &kp ENTER>;
+
             label = "CP_PATH_OPEN";
         };
 

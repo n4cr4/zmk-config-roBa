@@ -142,6 +142,13 @@
                 <&kp LC(LS(O))>,
                 <&pc_sleep>;
         };
+
+        copilot_dance: copilot_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPILOT_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(DOT))>, <&copilot_read_page>;
+        };
     };
 
     keymap {
@@ -150,7 +157,7 @@
         default_layer {
             bindings = <
 &kp Q                 &kp W         &kp E         &kp R           &kp T                                                       &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&mt LCTRL A           &kp S         &kp D         &kp F           &kp G             &kp PRINTSCREEN       &kp LC(LS(DOT))     &kp H        &kp J  &kp K      &kp L    &mt RCTRL SEMI
+&mt LCTRL A           &kp S         &kp D         &kp F           &kp G             &kp PRINTSCREEN       &copilot_dance      &kp H        &kp J  &kp K      &kp L    &mt RCTRL SEMI
 &mt LC(LEFT_SHIFT) Z  &kp X         &kp C         &kp V           &kp B             &cp_dance             &teams_sleep_dance  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &caps_word            &kp LEFT_WIN  &kp LEFT_ALT  &lt_lang_dance  &mt LSHIFT SPACE  &lt 5 LANGUAGE_1      &kp BACKSPACE       &lt 2 ENTER                             &mo 6
             >;

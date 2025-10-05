@@ -86,11 +86,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LG(X)>,
-                <&macro_wait_time 10000>,
-                <&kp U &kp U>,
-                <&macro_wait_time 2000>,
-                <&kp S>;
+                <&macro_wait_time 400>,
+                <&macro_tap_time 80>,
+                <&kp LG(X) &kp U &kp U &kp S>,
+                <&macro_press>;
 
             label = "PC_SLEEP";
         };

@@ -123,7 +123,11 @@
         copilot_read_page: copilot_read_page {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(PERIOD)) &kp LANG2 &kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp LS(ENTER) &kp LS(ENTER)>;
+            bindings =
+                <&kp LC(LS(PERIOD)) &kp LANG1>,
+                <&macro_wait_time 250>,
+                <&kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp ENTER &kp LS(ENTER)>;
+
             label = "COPILOT_READ_PAGE";
         };
     };

@@ -87,9 +87,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(X)>,
-                <&macro_wait_time 10000>,
+                <&macro_wait_time 1500>,
                 <&kp U>,
-                <&macro_wait_time 10000>,
+                <&macro_wait_time 1500>,
                 <&kp S>;
 
             label = "PC_SLEEP";
@@ -100,7 +100,7 @@
             #binding-cells = <0>;
             bindings =
                 <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C) &kp LG(R)>,
-                <&macro_wait_time 180>,
+                <&macro_wait_time 1500>,
                 <&kp LC(V) &kp ENTER>;
 
             label = "CP_PATH_OPEN";

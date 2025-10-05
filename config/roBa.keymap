@@ -186,7 +186,7 @@
             bindings = <
 &kp Q                          &kp W         &kp E       &kp R        &kp T                                                      &kp Y        &kp U  &tap_pref_lt 4 I  &kp O    &kp P
 &tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G             &kp PRINTSCREEN      &copilot_dance      &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
-&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B             &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LEFT_SHIFT SLASH
+&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B             &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
 &kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                    &mo 6
             >;
 
@@ -213,10 +213,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans              &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans              &mkp MB2             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans              &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT_ARROW)  &mkp MB1  &trans  &mkp MB2  &kp LA(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans              &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
         };
 

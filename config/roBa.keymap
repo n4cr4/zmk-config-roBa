@@ -15,9 +15,7 @@
     tapping-term-ms = <180>;
 };
 
-&trackball {
-    scroll-layers = <4>;
-};
+&trackball { scroll-layers = <4>; };
 
 / {
     combos {
@@ -73,8 +71,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 400>,
-                <&macro_tap_time 60>,
+                <&macro_wait_time 200>,
+                <&macro_tap_time 40>,
                 <&kp LG(X) &kp U &kp S>;
 
             label = "PC_SLEEP";
@@ -84,9 +82,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C) &kp LG(R)>,
-                <&macro_wait_time 2000>,
-                <&kp LC(V) &kp ENTER>;
+                <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C)>,
+                <&macro_wait_time 200>,
+                <&macro_tap_time 40>,
+                <&kp LG(R) &kp LC(V) &kp ENTER>;
 
             label = "CP_PATH_OPEN";
         };
@@ -109,8 +108,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap_time 40>,
+                <&macro_wait_time 200>,
                 <&kp LC(LS(PERIOD)) &kp LANG1>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 40>,
                 <&kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp ENTER &kp LS(ENTER)>;
 
             label = "COPILOT_READ_PAGE";
@@ -150,7 +151,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <230>;
+            tapping-term-ms = <225>;
         };
 
         tap_pref_lt: tap_pref_lt {

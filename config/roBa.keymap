@@ -87,8 +87,8 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(X)>,
-                <&macro_wait_time 5000>,
-                <&kp U>,
+                <&macro_wait_time 10000>,
+                <&kp U &kp U>,
                 <&macro_wait_time 2000>,
                 <&kp S>;
 

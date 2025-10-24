@@ -151,7 +151,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <225>;
+            tapping-term-ms = <220>;
         };
 
         tap_pref_lt: tap_pref_lt {
@@ -163,6 +163,23 @@
             tapping-term-ms = <225>;
             flavor = "balanced";
         };
+
+        full_screen_dance: full_screen_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FULL_SCREEN_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp LC(LA(PAUSE_BREAK))>;
+        };
+
+        hold_pref_mt: hold_pref_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_PREF_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <185>;
+        };
     };
 
     keymap {
@@ -170,21 +187,19 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W         &kp E       &kp R        &kp T                                                      &kp Y        &kp U  &tap_pref_lt 4 I  &kp O    &kp P
-&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G             &kp PRINTSCREEN      &copilot_dance      &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
-&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B             &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
-&kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                    &mo 6
+&kp Q                          &kp W         &kp E       &kp R        &kp T                                                                &kp Y        &kp U  &tap_pref_lt 4 I  &kp O    &kp P
+&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G                       &kp PRINTSCREEN      &copilot_dance      &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
+&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B                       &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
+&kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &hold_pref_mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                    &mo 6
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         FUNCTION {
             bindings = <
-&kp F1           &kp F2       &kp F3         &kp F4   &kp F5                       &kp F6          &kp F7          &kp F8              &kp F9               &kp F10
-&kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &trans  &trans      &kp F11  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW        &kp RIGHT_ARROW      &kp LC(LS(A))
-&kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans   &trans  &trans      &kp F12  &trans          &trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &duplicate_browser_tab
-&trans           &trans       &trans         &trans   &trans  &trans      &kp DEL  &trans                                                                   &trans
+&kp F1           &kp F2       &kp F3         &kp F4   &kp F5                                  &kp F6          &kp F7          &kp F8              &kp F9               &kp F10
+&kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &trans  &trans      &full_screen_dance  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW        &kp RIGHT_ARROW      &kp LEFT_SHIFT
+&kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans   &trans  &trans      &kp F12             &trans          &kp LC(LS(A))   &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &duplicate_browser_tab
+&trans           &trans       &trans         &trans   &trans  &trans      &kp DEL             &trans                                                                   &trans
             >;
         };
 

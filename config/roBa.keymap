@@ -56,16 +56,48 @@
         duplicate_browser_tab: duplicate_browser_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(D) &kp LA(ENTER)>;
-            bindings = <&kp LA(D) &kp LA(ENTER)>
-              , <&macro_press &kp LALT>
+            bindings = <&macro_press &kp LALT>
               , <&macro_press &kp D>
               , <&macro_release &kp D>
               , <&macro_press &kp ENTER>
               , <&macro_release &kp ENTER>
-              , <&macro_release &kp LALT>
-              ;
+              , <&macro_release &kp LALT>;
             label = "DUPLICATE_BROWSER_TAB";
+            tap-ms = <100>;
+        };
+
+        bk_browser: bk_browser {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>
+              , <&macro_press &kp LEFT_ARROW>
+              , <&macro_release &kp LEFT_ARROW>
+              , <&macro_release &kp LALT>;
+            label = "BK_BROWSER";
+            tap-ms = <100>;
+        };
+
+        fw_browser: fw_browser {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>
+              , <&macro_press &kp RIGHT_ARROW>
+              , <&macro_release &kp RIGHT_ARROW>
+              , <&macro_release &kp LALT>;
+            label = "FW_BROWSER";
+            tap-ms = <100>;
+        };
+
+        rdp_fullscreen: rdp_fullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>
+              , <&macro_press &kp LCTRL>
+              , <&macro_press &kp PAUSE_BREAK>
+              , <&macro_release &kp PAUSE_BREAK>
+              , <&macro_release &kp LCTRL>
+              , <&macro_release &kp LALT>;
+            label = "RDP_FULLSCREEN";
             tap-ms = <100>;
         };
 
@@ -178,7 +210,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FULL_SCREEN_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp F11>, <&kp LC(LA(PAUSE_BREAK))>;
+            bindings = <&kp F11>, <&rdp_fullscreen>;
         };
 
         hold_pref_mt: hold_pref_mt {

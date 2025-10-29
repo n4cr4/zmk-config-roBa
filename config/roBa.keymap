@@ -61,7 +61,7 @@
               , <&macro_press &kp LALT>
               , <&macro_press &kp D>
               , <&macro_release &kp D>
-              , <&macro_press &kp ENTER
+              , <&macro_press &kp ENTER>
               , <&macro_release &kp ENTER>
               , <&macro_release &kp LALT>
             label = "DUPLICATE_BROWSER_TAB";

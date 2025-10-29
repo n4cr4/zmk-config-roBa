@@ -53,19 +53,19 @@
     };
 
     macros {
-        type_hogehuga: type_hogehuga {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp H &kp O &kp G &kp E &kp H &kp O &kp G &kp E &kp LS(H) &kp LS(U) &kp LS(G) &kp LS(A) &kp LS(H) &kp LS(U) &kp LS(G) &kp LS(A)>;
-            label = "TYPE_HOGEHUGA";
-        };
-
         duplicate_browser_tab: duplicate_browser_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(D) &kp LA(ENTER)>;
+            bindings = <&kp LA(D) &kp LA(ENTER)>
+              , <&macro_press &kp LALT>
+              , <&macro_press &kp D>
+              , <&macro_release &kp D>
+              , <&macro_press &kp ENTER
+              , <&macro_release &kp ENTER>
+              , <&macro_release &kp LALT>
             label = "DUPLICATE_BROWSER_TAB";
-            tap-ms = <200>;
+            tap-ms = <100>;
         };
 
         pc_sleep: pc_sleep {

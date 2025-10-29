@@ -65,6 +65,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(D) &kp LA(ENTER)>;
             label = "DUPLICATE_BROWSER_TAB";
+            tap-ms = <50>;
         };
 
         pc_sleep: pc_sleep {

@@ -133,8 +133,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 200>,
-                <&macro_tap_time 40>,
+                <&macro_wait_time 210>,
+                <&macro_tap_time 50>,
                 <&kp LG(X) &kp U &kp S>;
 
             label = "PC_SLEEP";
@@ -177,14 +177,6 @@
                 <&kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp ENTER &kp LS(ENTER)>;
 
             label = "COPILOT_READ_PAGE";
-        };
-
-        test: test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(D) &kp LA(ENTER)>;
-            label = "TEST";
-            tap-ms = <300>;
         };
     };
 

@@ -65,7 +65,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(D) &kp LA(ENTER)>;
             label = "DUPLICATE_BROWSER_TAB";
-            tap-ms = <100>;
+            tap-ms = <200>;
         };
 
         pc_sleep: pc_sleep {
@@ -116,6 +116,14 @@
                 <&kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp ENTER &kp LS(ENTER)>;
 
             label = "COPILOT_READ_PAGE";
+        };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(D) &kp LA(ENTER)>;
+            label = "TEST";
+            tap-ms = <300>;
         };
     };
 
@@ -235,7 +243,7 @@
             bindings = <
 &trans      &trans  &trans             &trans  &trans                      &trans              &kp C_VOLUME_UP     &trans                  &trans                   &kp LA(LC(DELETE))
 &kp C_MUTE  &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans      &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)        &kp LG(RIGHT_ARROW)      &trans
-&trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans              &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans
+&trans      &trans  &trans             &test   &trans  &trans      &trans  &trans              &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans                                                                                   &trans
             >;
         };

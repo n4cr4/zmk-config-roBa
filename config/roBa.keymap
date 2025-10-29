@@ -64,6 +64,7 @@
               , <&macro_press &kp ENTER>
               , <&macro_release &kp ENTER>
               , <&macro_release &kp LALT>
+              ;
             label = "DUPLICATE_BROWSER_TAB";
             tap-ms = <100>;
         };

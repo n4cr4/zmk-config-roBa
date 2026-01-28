@@ -117,9 +117,9 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_press>,
-                <&kp PAUSE_BREAK>,
+                <&kp HOME>,
                 <&macro_release>,
-                <&kp PAUSE_BREAK>,
+                <&kp HOME>,
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_release>,
@@ -146,7 +146,7 @@
             bindings =
                 <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C)>,
                 <&macro_wait_time 200>,
-                <&macro_tap_time 40>,
+                <&macro_tap_time 100>,
                 <&kp LG(R) &kp LC(V) &kp ENTER>;
 
             label = "CP_PATH_OPEN";
@@ -164,19 +164,6 @@
             #binding-cells = <0>;
             bindings = <&mkp MB1 &mkp MB1 &kp LC(C)>;
             label = "CP_WORD";
-        };
-
-        copilot_read_page: copilot_read_page {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 40>,
-                <&macro_wait_time 200>,
-                <&kp LC(LS(PERIOD)) &kp LANG1>,
-                <&macro_wait_time 40>,
-                <&kp K &kp O &kp N &kp O &kp P &kp E &kp TAB &kp ENTER &kp LS(ENTER)>;
-
-            label = "COPILOT_READ_PAGE";
         };
     };
 

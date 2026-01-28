@@ -165,6 +165,26 @@
             bindings = <&mkp MB1 &mkp MB1 &kp LC(C)>;
             label = "CP_WORD";
         };
+
+        sys_terminate_rdp: sys_terminate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp END>,
+                <&macro_release>,
+                <&kp END>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "SYS_TERMINATE";
+        };
     };
 
     behaviors {
@@ -222,6 +242,13 @@
             flavor = "hold-preferred";
             tapping-term-ms = <185>;
         };
+
+        terminate_dance: terminate_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TERMINATE_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(DEL))>, <&sys_terminate_rdp>, <&cp_path_open>;
+        };
     };
 
     keymap {
@@ -274,7 +301,7 @@
 
         SYSTEM {
             bindings = <
-&trans      &trans  &trans             &trans  &trans                      &trans              &kp C_VOLUME_UP     &trans                  &trans                   &kp LA(LC(DELETE))
+&trans      &trans  &trans             &trans  &trans                      &trans              &kp C_VOLUME_UP     &trans                  &trans                   &terminate_dance
 &kp C_MUTE  &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans      &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)        &kp LG(RIGHT_ARROW)      &trans
 &trans      &trans  &kp LG(LC(D))      &trans  &trans  &trans      &trans  &trans              &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans
 &trans      &trans  &trans             &trans  &trans  &trans      &trans  &trans                                                                                   &trans

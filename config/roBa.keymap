@@ -229,19 +229,19 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W         &kp E       &kp R        &kp T                                                                &kp Y        &kp U  &tap_pref_lt 4 I  &kp O    &kp P
-&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G                       &kp PRINTSCREEN      &none               &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
-&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B                       &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
-&kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &hold_pref_mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                    &mo 6
+&kp Q                          &kp W         &kp E       &kp R        &kp T                                                                &kp Y        &tap_pref_mt LC(LALT) U  &tap_pref_lt 4 I         &kp O    &kp P
+&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G                       &kp PRINTSCREEN      &full_screen_dance  &kp H        &kp J                    &tap_pref_lt 3 K         &kp L    &tap_pref_mt RCTRL SEMI
+&tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B                       &cp_dance            &teams_sleep_dance  &kp N        &kp M                    &tap_pref_mt LALT COMMA  &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
+&kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &hold_pref_mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                                             &mo 6
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp F1           &kp F2       &kp F3         &kp F4   &kp F5                                  &kp F6          &kp F7          &kp F8        &kp F9           &kp F10
-&kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &trans  &trans      &full_screen_dance  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT
-&kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans   &trans  &trans      &kp F12             &trans          &kp LC(LS(A))   &bk_browser   &fw_browser      &duplicate_browser_tab
-&trans           &trans       &trans         &trans   &trans  &trans      &kp DEL             &trans                                                         &trans
+&kp F1           &kp F2       &kp F3         &kp F4   &kp F5                       &kp F6          &kp F7          &kp F8        &kp F9           &kp F10
+&kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &trans  &trans      &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT
+&kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans   &trans  &trans      &kp F12  &trans          &kp LC(LS(A))   &bk_browser   &fw_browser      &duplicate_browser_tab
+&trans           &trans       &trans         &trans   &trans  &trans      &kp DEL  &trans                                                         &trans
             >;
         };
 

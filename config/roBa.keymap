@@ -186,13 +186,6 @@
                 <&pc_sleep>;
         };
 
-        copilot_dance: copilot_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COPILOT_DANCE";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(DOT))>, <&copilot_read_page>;
-        };
-
         tap_pref_mt: tap_pref_mt {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_PREF_MT";
@@ -237,7 +230,7 @@
         default_layer {
             bindings = <
 &kp Q                          &kp W         &kp E       &kp R        &kp T                                                                &kp Y        &kp U  &tap_pref_lt 4 I  &kp O    &kp P
-&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G                       &kp PRINTSCREEN      &copilot_dance      &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
+&tap_pref_mt LCTRL A           &kp S         &kp D       &kp F        &kp G                       &kp PRINTSCREEN      &none               &kp H        &kp J  &tap_pref_lt 3 K  &kp L    &tap_pref_mt RCTRL SEMI
 &tap_pref_mt LC(LEFT_SHIFT) Z  &kp X         &kp C       &kp V        &kp B                       &cp_dance            &teams_sleep_dance  &kp N        &kp M  &kp COMMA         &kp DOT  &tap_pref_mt LC(LEFT_SHIFT) SLASH
 &kp LALT                       &kp LEFT_WIN  &caps_word  &lt 1 LANG2  &hold_pref_mt LSHIFT SPACE  &lt 5 LANG1          &kp BACKSPACE       &lt 2 ENTER                                    &mo 6
             >;

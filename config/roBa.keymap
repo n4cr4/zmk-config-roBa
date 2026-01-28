@@ -42,7 +42,7 @@
         };
 
         quit {
-            bindings = <&kp LA(F4)>;
+            bindings = <&sys_window_terminate>;
             key-positions = <0 9>;
         };
 
@@ -132,12 +132,10 @@
         pc_sleep: pc_sleep {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_wait_time 210>,
-                <&macro_tap_time 50>,
-                <&kp LG(X) &kp U &kp S>;
-
+            bindings = <&kp LG(X) &kp U &kp S>;
             label = "PC_SLEEP";
+            wait-ms = <200>;
+            tap-ms = <100>;
         };
 
         cp_path_open: cp_path_open {
@@ -184,6 +182,24 @@
                 <&kp LALT>;
 
             label = "SYS_TERMINATE";
+            tap-ms = <100>;
+        };
+
+        sys_window_terminate: sys_window_terminate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "SYS_WINDOW_TERMINATE";
+            tap-ms = <100>;
         };
     };
 

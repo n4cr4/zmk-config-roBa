@@ -348,6 +348,44 @@
             label = "PPT_SHAPE_MENU";
             tap-ms = <100>;
         };
+
+        excel_col_width_auto: excel_col_width_auto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "EXCEL_COL_WIDTH_AUTO";
+            tap-ms = <100>;
+        };
+
+        excel_row_height_auto: excel_row_height_auto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "EXCEL_ROW_HEIGHT_AUTO";
+            tap-ms = <100>;
+        };
     };
 
     behaviors {
@@ -427,6 +465,30 @@
             tapping-term-ms = <400>;
             bindings = <&ppt_table_dist_cols>, <&ppt_table_dist_rows>;
         };
+
+        excel_cell_size_dance: excel_cell_size_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EXCEL_CELL_SIZE_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&excel_col_width_auto>, <&excel_row_height_auto>;
+        };
+
+        time_date_dance: time_date_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TIME_DATE_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LC(LS(SEMI))>, <&kp LC(SEMI)>;
+        };
+
+        outlook_dance: outlook_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OUTLOOK_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LC(N1)>, <&kp LC(N2)>, <&kp LC(N3)>;
+        };
     };
 
     keymap {
@@ -497,10 +559,10 @@
 
         OFFICE {
             bindings = <
-&trans  &ppt_outline_weight  &ppt_table_dance  &ppt_shape_menu  &trans                         &trans  &trans  &trans  &trans  &trans
-&trans  &ppt_style_dance     &ppt_align_menu   &kp LC(LS(G))    &kp LC(G)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans            &trans           &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans            &trans           &trans     &trans      &trans  &trans                          &trans
+&trans  &ppt_outline_weight  &ppt_table_dance  &ppt_shape_menu  &trans                         &trans  &excel_cell_size_dance  &trans  &trans  &trans
+&trans  &ppt_style_dance     &ppt_align_menu   &kp LC(LS(G))    &kp LC(G)  &trans      &trans  &time_date_dance        &trans  &trans  &trans  &trans
+&trans  &trans               &trans            &trans           &trans     &trans      &trans  &outlook_dance          &trans  &trans  &trans  &trans
+&trans  &trans               &trans            &trans           &trans     &trans      &trans  &trans                                        &trans
             >;
         };
     };

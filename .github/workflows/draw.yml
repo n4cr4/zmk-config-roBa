@@ -6,7 +6,7 @@ on:
     paths:
       - "config/roBa.keymap"
       - "keymap_drawer.config.yaml"
-      - "config/roBa.dtsi"
+      - "boards/shields/roBa/roBa.dtsi"
 
 jobs:
   draw:

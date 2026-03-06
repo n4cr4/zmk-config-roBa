@@ -1,0 +1,34 @@
+parse_config:
+  zmk_keyboard: roBa
+  zmk_config_path: config
+  raw_binding_map:
+    "&bootloader": BOOT
+    "&caps_word": CAPS
+    "&mkp MB1": MB1
+    "&mkp MB2": MB2
+    "&mkp MB3": MB3
+    "&bt BT_SEL 0": BT0
+    "&bt BT_SEL 1": BT1
+    "&bt BT_SEL 2": BT2
+    "&bt BT_SEL 3": BT3
+    "&bt BT_SEL 4": BT4
+    "&bt BT_CLR": BTCLR
+    "&bt BT_CLR_ALL": BTCLRALL
+  zmk_keycode_map:
+    LANG2: LANG2
+    LANG1: LANG1
+
+draw_config:
+  key_h: 52
+  key_w: 52
+  split_gap: 60
+  combo_w: 32
+  combo_h: 24
+  line_spacing: 1.5
+  arc_scale: 0.5
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 8
+  outer_pad_h: 8
+  style: "compact"
+  footer_text: "roBa"

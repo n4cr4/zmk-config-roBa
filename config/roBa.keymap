@@ -214,11 +214,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp H>,
-                <&macro_tap &kp G>,
-                <&macro_tap &kp A>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp G>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_ALIGN_MENU";
             tap-ms = <50>;
@@ -229,11 +234,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp H>,
-                <&macro_tap &kp S>,
-                <&macro_tap &kp O>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_OUTLINE_MENU";
             tap-ms = <50>;
@@ -244,11 +254,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp H>,
-                <&macro_tap &kp S>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_FILL_MENU";
             tap-ms = <50>;
@@ -259,12 +274,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp H>,
-                <&macro_tap &kp S>,
-                <&macro_tap &kp O>,
-                <&macro_tap &kp W>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_OUTLINE_WEIGHT";
             tap-ms = <50>;
@@ -275,12 +296,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp J>,
-                <&macro_tap &kp L>,
-                <&macro_tap &kp U>,
-                <&macro_tap &kp R>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_TABLE_DIST_ROWS";
             tap-ms = <50>;
@@ -291,12 +318,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp J>,
-                <&macro_tap &kp L>,
-                <&macro_tap &kp U>,
-                <&macro_tap &kp C>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_TABLE_DIST_COLS";
             tap-ms = <50>;
@@ -307,11 +340,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp H>,
-                <&macro_tap &kp S>,
-                <&macro_tap &kp H>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "PPT_SHAPE_MENU";
             tap-ms = <50>;
@@ -393,8 +431,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PPT_TABLE_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&ppt_table_dist_rows>, <&ppt_table_dist_cols>;
+            bindings = <&ppt_table_dist_cols>, <&ppt_table_dist_rows>;
         };
     };
 
@@ -466,10 +503,10 @@
 
         OFFICE {
             bindings = <
-&trans  &ppt_outline_weight  &ppt_table_dance  &ppt_shape_menu  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &ppt_outline_weight  &ppt_table_dance  &ppt_shape_menu  &trans                         &trans  &trans  &trans  &trans  &trans
 &trans  &ppt_style_dance     &ppt_align_menu   &kp LC(LS(G))    &kp LC(G)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans            &trans           &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans            &trans           &trans  &trans      &trans  &trans                          &trans
+&trans  &trans               &trans            &trans           &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans            &trans           &trans     &trans      &trans  &trans                          &trans
             >;
         };
     };

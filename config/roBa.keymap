@@ -431,6 +431,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PPT_TABLE_DANCE";
             #binding-cells = <0>;
+            tapping-term-ms = <400>;
             bindings = <&ppt_table_dist_cols>, <&ppt_table_dist_rows>;
         };
     };

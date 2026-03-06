@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - PRINTSCREEN
-  - '&full_screen_dance'
+  - FS_DNC
   - H
   - J
   - {t: K, h: MOUSE}
@@ -28,8 +28,8 @@ layers:
   - C
   - V
   - B
-  - '&cp_dance'
-  - '&teams_sleep_dance'
+  - CP_DNC
+  - TM_SL
   - N
   - M
   - {t: COMMA, h: LALT}
@@ -78,7 +78,7 @@ layers:
   - Ctl+Sft+A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&duplicate_browser_tab'
+  - DUP_TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -150,11 +150,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bk_browser'
+  - BK_BRW
   - MB1
   - {type: held}
   - MB2
-  - '&fw_browser'
+  - FW_BRW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -230,7 +230,7 @@ layers:
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&terminate_dance'
+  - TRM_D
   - MUTE
   - {t: ▽, type: trans}
   - VOLUME DOWN
@@ -310,24 +310,24 @@ layers:
   - {type: held}
   OFFICE:
   - {t: ▽, type: trans}
-  - '&ppt_outline_weight'
-  - '&ppt_table_dance'
-  - '&ppt_shape_menu'
+  - PPT_OW
+  - PPT_TB
+  - PPT_SH
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&excel_cell_size_dance'
+  - XLC_SZ
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&ppt_style_dance'
-  - '&ppt_align_menu'
+  - PPT_ST
+  - PPT_AL
   - Ctl+Sft+G
   - Ctl+G
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&time_date_dance'
+  - TM_DT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -339,7 +339,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&outlook_dance'
+  - OTLK_D
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -362,7 +362,7 @@ combos:
 - p: [2, 3]
   k: Sft+TAB
 - p: [0, 9]
-  k: '&sys_window_terminate'
+  k: WIN_TRM
 - p: [1, 2]
   k: TAB
 - p: [37, 41]

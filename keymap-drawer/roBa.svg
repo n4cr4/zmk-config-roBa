@@ -197,7 +197,7 @@ path.combo {
 </g>
 <g transform="translate(416, 104)" class="key keypos-16">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;full_scre…</tspan></text>
+<text x="0" y="0" class="key tap">FS_DNC</text>
 </g>
 <g transform="translate(468, 92)" class="key keypos-17">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -245,11 +245,11 @@ path.combo {
 </g>
 <g transform="translate(287, 156)" class="key keypos-27">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;cp_dance</tspan></text>
+<text x="0" y="0" class="key tap">CP_DNC</text>
 </g>
 <g transform="translate(416, 156)" class="key keypos-28">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;teams_sle…</tspan></text>
+<text x="0" y="0" class="key tap">TM_SL</text>
 </g>
 <g transform="translate(468, 144)" class="key keypos-29">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -339,7 +339,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -509,7 +509,7 @@ path.combo {
 </g>
 <g transform="translate(677, 162)" class="key keypos-33">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;duplicate…</tspan></text>
+<text x="0" y="0" class="key tap">DUP_TAB</text>
 </g>
 <g transform="translate(26, 214)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -566,7 +566,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -775,7 +775,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -863,7 +863,7 @@ path.combo {
 </g>
 <g transform="translate(468, 92)" class="key keypos-17">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bk_browser</tspan></text>
+<text x="0" y="0" class="key tap">BK_BRW</text>
 </g>
 <g transform="translate(520, 85)" class="key keypos-18">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -878,7 +878,7 @@ path.combo {
 </g>
 <g transform="translate(677, 110)" class="key keypos-21">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;fw_browser</tspan></text>
+<text x="0" y="0" class="key tap">FW_BRW</text>
 </g>
 <g transform="translate(26, 162)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -984,7 +984,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -1195,7 +1195,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -1253,7 +1253,7 @@ path.combo {
 </g>
 <g transform="translate(677, 58)" class="key keypos-9">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;terminate…</tspan></text>
+<text x="0" y="0" class="key tap">TRM_D</text>
 </g>
 <g transform="translate(26, 110)" class="key keypos-10">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -1422,7 +1422,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -1631,7 +1631,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>
@@ -1655,15 +1655,15 @@ path.combo {
 </g>
 <g transform="translate(78, 39)" class="key keypos-1">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;ppt_outli…</tspan></text>
+<text x="0" y="0" class="key tap">PPT_OW</text>
 </g>
 <g transform="translate(130, 26)" class="key keypos-2">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;ppt_table…</tspan></text>
+<text x="0" y="0" class="key tap">PPT_TB</text>
 </g>
 <g transform="translate(182, 33)" class="key keypos-3">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;ppt_shape…</tspan></text>
+<text x="0" y="0" class="key tap">PPT_SH</text>
 </g>
 <g transform="translate(235, 40)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -1679,7 +1679,7 @@ path.combo {
 </g>
 <g transform="translate(572, 26)" class="key keypos-7">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;excel_cel…</tspan></text>
+<text x="0" y="0" class="key tap">XLC_SZ</text>
 </g>
 <g transform="translate(625, 39)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -1695,11 +1695,11 @@ path.combo {
 </g>
 <g transform="translate(78, 91)" class="key keypos-11">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;ppt_style…</tspan></text>
+<text x="0" y="0" class="key tap">PPT_ST</text>
 </g>
 <g transform="translate(130, 78)" class="key keypos-12">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;ppt_align…</tspan></text>
+<text x="0" y="0" class="key tap">PPT_AL</text>
 </g>
 <g transform="translate(182, 85)" class="key keypos-13">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -1725,7 +1725,7 @@ path.combo {
 </g>
 <g transform="translate(520, 85)" class="key keypos-18">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;time_date…</tspan></text>
+<text x="0" y="0" class="key tap">TM_DT</text>
 </g>
 <g transform="translate(572, 78)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -1773,7 +1773,7 @@ path.combo {
 </g>
 <g transform="translate(520, 137)" class="key keypos-30">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;outlook_d…</tspan></text>
+<text x="0" y="0" class="key tap">OTLK_D</text>
 </g>
 <g transform="translate(572, 130)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
@@ -1841,7 +1841,7 @@ path.combo {
 <path d="M351,58 l-308,0" class="combo"/>
 <path d="M351,58 l308,0" class="combo"/>
 <rect rx="6" ry="6" x="335" y="46" width="32" height="24" class="combo"/>
-<text x="351" y="58" class="combo tap"><tspan style="font-size: 64%">&amp;sys_windo…</tspan></text>
+<text x="351" y="58" class="combo tap">WIN_TRM</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="88" y="20" width="32" height="24" class="combo"/>

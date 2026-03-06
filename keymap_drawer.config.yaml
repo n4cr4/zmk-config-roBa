@@ -14,6 +14,34 @@ parse_config:
     "&bt BT_SEL 4": BT4
     "&bt BT_CLR": BTCLR
     "&bt BT_CLR_ALL": BTCLRALL
+    "&duplicate_browser_tab": DUP_TAB
+    "&bk_browser": BK_BRW
+    "&fw_browser": FW_BRW
+    "&rdp_fullscreen": RDP_FS
+    "&pc_sleep": SLEEP
+    "&cp_path_open": CP_PTH
+    "&cp_line": CP_LN
+    "&cp_word": CP_WD
+    "&sys_terminate_rdp": TERM_RD
+    "&sys_window_terminate": WIN_TRM
+    "&ppt_align_menu": PPT_AL
+    "&ppt_outline_menu": PPT_OL
+    "&ppt_fill_menu": PPT_FL
+    "&ppt_outline_weight": PPT_OW
+    "&ppt_table_dist_rows": PPT_TR
+    "&ppt_table_dist_cols": PPT_TC
+    "&ppt_shape_menu": PPT_SH
+    "&excel_col_width_auto": XLC_W
+    "&excel_row_height_auto": XLR_H
+    "&cp_dance": CP_DNC
+    "&teams_sleep_dance": TM_SL
+    "&full_screen_dance": FS_DNC
+    "&terminate_dance": TRM_D
+    "&ppt_style_dance": PPT_ST
+    "&ppt_table_dance": PPT_TB
+    "&excel_cell_size_dance": XLC_SZ
+    "&time_date_dance": TM_DT
+    "&outlook_dance": OTLK_D
   zmk_keycode_map:
     LANG2: LANG2
     LANG1: LANG1

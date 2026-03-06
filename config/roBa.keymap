@@ -226,8 +226,7 @@
                 <&kp LALT>;
 
             label = "PPT_ALIGN_MENU";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_outline_menu: ppt_outline_menu {
@@ -246,8 +245,7 @@
                 <&kp LALT>;
 
             label = "PPT_OUTLINE_MENU";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_fill_menu: ppt_fill_menu {
@@ -266,8 +264,7 @@
                 <&kp LALT>;
 
             label = "PPT_FILL_MENU";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_outline_weight: ppt_outline_weight {
@@ -288,8 +285,7 @@
                 <&kp LALT>;
 
             label = "PPT_OUTLINE_WEIGHT";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_table_dist_rows: ppt_table_dist_rows {
@@ -310,8 +306,7 @@
                 <&kp LALT>;
 
             label = "PPT_TABLE_DIST_ROWS";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_table_dist_cols: ppt_table_dist_cols {
@@ -332,8 +327,7 @@
                 <&kp LALT>;
 
             label = "PPT_TABLE_DIST_COLS";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
 
         ppt_shape_menu: ppt_shape_menu {
@@ -352,8 +346,7 @@
                 <&kp LALT>;
 
             label = "PPT_SHAPE_MENU";
-            tap-ms = <50>;
-            wait-ms = <50>;
+            tap-ms = <100>;
         };
     };
 

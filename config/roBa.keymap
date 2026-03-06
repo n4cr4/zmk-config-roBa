@@ -145,9 +145,7 @@
                 <&mkp MB1 &mkp MB1 &mkp MB1 &kp LC(C)>,
                 <&macro_wait_time 200>,
                 <&macro_tap_time 100>,
-                <&kp LG(R) &kp LC(V) &kp ENTER>,
-                <&macro_wait_time 1000>,
-                <&macro_tap &none>;
+                <&kp LG(R) &kp LC(V) &kp ENTER>;
 
             label = "CP_PATH_OPEN";
         };

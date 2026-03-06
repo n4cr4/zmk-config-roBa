@@ -209,6 +209,38 @@
             label = "SYS_WINDOW_TERMINATE";
             tap-ms = <100>;
         };
+
+        ppt_align_center_h: ppt_align_center_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_release>,
+                <&kp H>,
+                <&kp G>,
+                <&kp C>;
+
+            label = "PPT_ALIGN_CENTER_H";
+            tap-ms = <50>;
+            wait-ms = <50>;
+        };
+
+        ppt_align_center_v: ppt_align_center_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_release>,
+                <&kp H>,
+                <&kp G>,
+                <&kp M>;
+
+            label = "PPT_ALIGN_CENTER_V";
+            tap-ms = <50>;
+            wait-ms = <50>;
+        };
     };
 
     behaviors {
@@ -343,10 +375,10 @@
 
         OFFICE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans           &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &ppt_align_center_v  &ppt_align_center_h  &kp LC(LS(G))  &kp LC(G)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };

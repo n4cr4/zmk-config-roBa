@@ -22,7 +22,7 @@ layers:
   - J
   - {t: K, h: MOUSE}
   - L
-  - {t: ;, h: RCTRL}
+  - {t: SEMI, h: RCTRL}
   - {t: Z, h: Ctl+LEFT SHIFT}
   - X
   - C
@@ -32,12 +32,12 @@ layers:
   - '&teams_sleep_dance'
   - N
   - M
-  - {t: ',', h: LALT}
-  - .
-  - {t: /, h: Ctl+LEFT SHIFT}
+  - {t: COMMA, h: LALT}
+  - DOT
+  - {t: SLASH, h: Ctl+LEFT SHIFT}
   - LALT
   - LEFT WIN
-  - '&caps_word'
+  - CAPS
   - {t: LANG2, h: FUNCTION}
   - {t: SPACE, h: LSHIFT}
   - {t: LANG1, h: SYSTEM}
@@ -99,30 +99,30 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - EXCL
+  - AT
+  - HASH
+  - DLLR
+  - PRCNT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - \
-  - '{'
-  - '}'
-  - _
-  - '='
+  - CARET
+  - AMPS
+  - ASTRK
+  - LPAR
+  - RPAR
+  - BSLH
+  - LBRC
+  - RBRC
+  - UNDER
+  - EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - +
-  - '-'
-  - '['
-  - ']'
-  - '|'
+  - PLUS
+  - MINUS
+  - LBKT
+  - RBKT
+  - PIPE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,9 +151,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bk_browser'
-  - '&mkp MB1'
+  - MB1
   - {type: held}
-  - '&mkp MB2'
+  - MB2
   - '&fw_browser'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -265,11 +265,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BOARD_CTRL:
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT0
+  - BT1
+  - BT2
+  - BT3
+  - BT4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -287,19 +287,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - BTCLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - BOOT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - BTCLRALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -354,9 +354,9 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [8, 9]
-  k: '`'
+  k: GRAVE
 - p: [20, 21]
-  k: ''''
+  k: SQT
 - p: [32, 33]
   k: ESC
 - p: [2, 3]

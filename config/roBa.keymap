@@ -54,6 +54,7 @@
         modify {
             bindings = <&mo 7>;
             key-positions = <37 41>;
+            timeout-ms = <150>;
         };
     };
 
